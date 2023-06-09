@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useState, useEffect, useContext } from "react";
 import "./App.css";
 import { AuthContextProvider } from "../src/store/auth-context.js";

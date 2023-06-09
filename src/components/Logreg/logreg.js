@@ -10,6 +10,7 @@ import { useState, useEffect } from "react";
 function Logreg() {
   const [logRegDash, setIsLogRegDash] = useState(0);
   const [isLogedIn, setIsLoggedIn] = useState(false);
+  const [dashboard, setDashboard] = useState(3);
 
   useEffect(() => {
     const storedUserLoggedInInformation = localStorage.getItem("isLoggedIn");
@@ -36,6 +37,7 @@ function Logreg() {
   const logoutHandler = () => {
     localStorage.removeItem("isLoggedIn");
     localStorage.removeItem("Token");
+    localStorage.removeItem("Dashboard");
     setIsLoggedIn(false);
     setIsLogRegDash(0);
   };
@@ -43,11 +45,23 @@ function Logreg() {
   var content = "";
 
   if (logRegDash == 0) {
-    content = <Login setLogin={loginHandler} dontHaveAccount={goToRegister} />;
+    content = (
+      <Login
+        setLogin={loginHandler}
+        setDashboard={setDashboard}
+        dontHaveAccount={goToRegister}
+      />
+    );
   } else if (logRegDash == 1) {
-    content = <Register backToLogin={goToLogin} />;
+    content = (
+      <Register
+        backToLogin={goToLogin}
+        setDashboard={setDashboard}
+        setLogin={loginHandler}
+      />
+    );
   } else {
-    content = <Dashboard />;
+    content = <Dashboard whichUser={dashboard} />;
   }
   return (
     <Container>

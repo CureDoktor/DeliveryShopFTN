@@ -2,15 +2,26 @@ import Form from "react-bootstrap/Form";
 import { useContext, useState, React } from "react";
 import { Col, Container, Button, Row } from "react-bootstrap";
 import styles from "./styles.module.css";
+import { userLogin } from "../../store/ApiService";
+import AuthContext from "../../store/auth-context";
+import jwt_decode from "jwt-decode";
 
 function Login(props) {
+  const authCtx = useContext(AuthContext);
   const [formData, setFormData] = useState({
     password: "",
-    email: "",
-    passwordRetype: "",
-    state: "",
-    yearOfBirth: "",
+    username: "",
   });
+
+  const decodeJWT = (token) => {
+    try {
+      const decoded = jwt_decode(token);
+      return decoded;
+    } catch (error) {
+      console.error("Error decoding JWT:", error);
+      return null;
+    }
+  };
 
   const handleChange = (event) => {
     const { value, name } = event.target;
@@ -19,9 +30,20 @@ function Login(props) {
       [name]: value,
     });
   };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
-    props.setLogin();
+    try {
+      const response = await userLogin(formData);
+      console.log(response.data.token);
+      const decodedToken = decodeJWT(response.data.token);
+      authCtx.settingToken(response.data.token);
+      props.setDashboard(decodedToken.Role);
+      localStorage.setItem("Dashboard", decodedToken.Role);
+      props.setLogin();
+    } catch (err) {
+      console.log("Username or password are not good!");
+    }
   };
 
   return (
@@ -41,19 +63,19 @@ function Login(props) {
           <div className={styles.formField}>
             <Form onSubmit={handleSubmit}>
               <Row className="mb-3">
-                <Form.Group as={Col} controlId="email">
-                  <Form.Label>Email</Form.Label>
+                <Form.Group as={Col} controlId="userName">
+                  <Form.Label>Username</Form.Label>
                   <Form.Control
                     required
-                    name="email"
-                    type="email"
+                    name="username"
+                    type="text"
                     onChange={handleChange}
-                    placeholder="Enter email"
-                    value={formData.email}
+                    placeholder="Enter Username"
+                    value={formData.username}
                     className={styles.formControl}
                   />
                   <Form.Control.Feedback type="invalid">
-                    Incorrect Email
+                    Incorrect Username
                   </Form.Control.Feedback>
                 </Form.Group>
               </Row>

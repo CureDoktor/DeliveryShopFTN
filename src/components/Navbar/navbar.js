@@ -6,7 +6,7 @@ function Nav(props) {
   return (
     <Navbar expand="lg" variant="light" bg="light">
       <Container>
-        <Navbar.Brand href="#">Navbar</Navbar.Brand>
+        <Navbar.Brand href="#">Delivery Shop</Navbar.Brand>
         {props.log ? (
           <Button onClick={props.log ? props.logout : props.login}>
             Logout
