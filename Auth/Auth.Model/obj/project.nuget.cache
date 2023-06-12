@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cwe2iWJf/Ky3bvHlnsgDEhIYUsGBRZi+fCikiy5ZBBhBjw0ErupL5tcMu0lZsUhU6sQX9+3h1tdH4gHMPa0X4A==",
+  "dgSpecHash": "D8jGcA3OngHeI51BqZtj4pR6p4ptnm2eb1cSDH0VS2Bvv5t1rs+Luk7jogpPJ76UQIk0T7qf12hAu1w7qmU3lQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nikola\\Desktop\\Web2\\smartShopPSGS\\Auth\\Auth.Model\\Auth.Model.csproj",
+  "projectFilePath": "C:\\Users\\Nikola\\Desktop\\Web2\\DeliveryShopFrontend\\Auth\\Auth.Model\\Auth.Model.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nikola\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nikola\\Desktop\\Web2\\smartShopPSGS\\Auth\\Auth.Infrastructure\\Auth.Infrastructure.csproj": {}
+    "C:\\Users\\Nikola\\Desktop\\Web2\\DeliveryShopFrontend\\Auth\\Auth.Infrastructure\\Auth.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nikola\\Desktop\\Web2\\smartShopPSGS\\Auth\\Auth.Infrastructure\\Auth.Infrastructure.csproj": {
+    "C:\\Users\\Nikola\\Desktop\\Web2\\DeliveryShopFrontend\\Auth\\Auth.Infrastructure\\Auth.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nikola\\Desktop\\Web2\\smartShopPSGS\\Auth\\Auth.Infrastructure\\Auth.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Nikola\\Desktop\\Web2\\DeliveryShopFrontend\\Auth\\Auth.Infrastructure\\Auth.Infrastructure.csproj",
         "projectName": "Auth.Infrastructure",
-        "projectPath": "C:\\Users\\Nikola\\Desktop\\Web2\\smartShopPSGS\\Auth\\Auth.Infrastructure\\Auth.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\Nikola\\Desktop\\Web2\\DeliveryShopFrontend\\Auth\\Auth.Infrastructure\\Auth.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Nikola\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nikola\\Desktop\\Web2\\smartShopPSGS\\Auth\\Auth.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\Nikola\\Desktop\\Web2\\DeliveryShopFrontend\\Auth\\Auth.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,8 +31,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Nikola\\Desktop\\Web2\\smartShopPSGS\\Auth\\Auth.Model\\Auth.Model.csproj": {
-                "projectPath": "C:\\Users\\Nikola\\Desktop\\Web2\\smartShopPSGS\\Auth\\Auth.Model\\Auth.Model.csproj"
+              "C:\\Users\\Nikola\\Desktop\\Web2\\DeliveryShopFrontend\\Auth\\Auth.Model\\Auth.Model.csproj": {
+                "projectPath": "C:\\Users\\Nikola\\Desktop\\Web2\\DeliveryShopFrontend\\Auth\\Auth.Model\\Auth.Model.csproj"
               }
             }
           }
@@ -116,14 +116,14 @@
         }
       }
     },
-    "C:\\Users\\Nikola\\Desktop\\Web2\\smartShopPSGS\\Auth\\Auth.Model\\Auth.Model.csproj": {
+    "C:\\Users\\Nikola\\Desktop\\Web2\\DeliveryShopFrontend\\Auth\\Auth.Model\\Auth.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nikola\\Desktop\\Web2\\smartShopPSGS\\Auth\\Auth.Model\\Auth.Model.csproj",
+        "projectUniqueName": "C:\\Users\\Nikola\\Desktop\\Web2\\DeliveryShopFrontend\\Auth\\Auth.Model\\Auth.Model.csproj",
         "projectName": "Auth.Model",
-        "projectPath": "C:\\Users\\Nikola\\Desktop\\Web2\\smartShopPSGS\\Auth\\Auth.Model\\Auth.Model.csproj",
+        "projectPath": "C:\\Users\\Nikola\\Desktop\\Web2\\DeliveryShopFrontend\\Auth\\Auth.Model\\Auth.Model.csproj",
         "packagesPath": "C:\\Users\\Nikola\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nikola\\Desktop\\Web2\\smartShopPSGS\\Auth\\Auth.Model\\obj\\",
+        "outputPath": "C:\\Users\\Nikola\\Desktop\\Web2\\DeliveryShopFrontend\\Auth\\Auth.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nikola\\Desktop\\Web2\\smartShopPSGS\\SmartShop.ApiGateway\\SmartShop.ApiGateway\\SmartShop.ApiGateway.csproj": {}
+    "C:\\Users\\Nikola\\Desktop\\Web2\\DeliveryShopFrontend\\DeliveryShop\\SmartShop.ApiGateway\\SmartShop.ApiGateway.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nikola\\Desktop\\Web2\\smartShopPSGS\\SmartShop.ApiGateway\\SmartShop.ApiGateway\\SmartShop.ApiGateway.csproj": {
+    "C:\\Users\\Nikola\\Desktop\\Web2\\DeliveryShopFrontend\\DeliveryShop\\SmartShop.ApiGateway\\SmartShop.ApiGateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nikola\\Desktop\\Web2\\smartShopPSGS\\SmartShop.ApiGateway\\SmartShop.ApiGateway\\SmartShop.ApiGateway.csproj",
+        "projectUniqueName": "C:\\Users\\Nikola\\Desktop\\Web2\\DeliveryShopFrontend\\DeliveryShop\\SmartShop.ApiGateway\\SmartShop.ApiGateway.csproj",
         "projectName": "SmartShop.ApiGateway",
-        "projectPath": "C:\\Users\\Nikola\\Desktop\\Web2\\smartShopPSGS\\SmartShop.ApiGateway\\SmartShop.ApiGateway\\SmartShop.ApiGateway.csproj",
+        "projectPath": "C:\\Users\\Nikola\\Desktop\\Web2\\DeliveryShopFrontend\\DeliveryShop\\SmartShop.ApiGateway\\SmartShop.ApiGateway.csproj",
         "packagesPath": "C:\\Users\\Nikola\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nikola\\Desktop\\Web2\\smartShopPSGS\\SmartShop.ApiGateway\\SmartShop.ApiGateway\\obj\\",
+        "outputPath": "C:\\Users\\Nikola\\Desktop\\Web2\\DeliveryShopFrontend\\DeliveryShop\\SmartShop.ApiGateway\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

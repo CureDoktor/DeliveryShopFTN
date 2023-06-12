@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XJFh3JpaGUbP16cIThHxm+KMVV/bZ/Io1jAcHjpfhSqrv2wpJFG69ljcNblrAW5s14E5BFn10FfVUHeyPBBCfg==",
+  "dgSpecHash": "0/5VYV5Ca128932AcMuOmKPvGJwCxHNN0NaA/r1OalriqKkN/V5/1tu3ABQa4XkxLETFYjXxPZnDSGcJuC6/Cg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nikola\\Desktop\\Web2\\smartShopPSGS\\Auth\\Auth.API\\Auth.API.csproj",
+  "projectFilePath": "C:\\Users\\Nikola\\Desktop\\Web2\\DeliveryShopFrontend\\Auth\\Auth.API\\Auth.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nikola\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",

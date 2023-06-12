@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "N10zRglYQn/6kI3Y1Jxlby3QqvzNDcndUuCcymYdvL/sBsWtshvobVy0bIBL2//sN2qUkZd8ShhZY8BrJmEt2w==",
+  "dgSpecHash": "NZQrUvJBWEdj8jiPZc5QgopfVEkJO2JVmPooOskqhjl9arlcZCWG6wDwmLr6e/wqpr7Ugvhuhp5PC3oYeMcAqg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nikola\\Desktop\\Web2\\smartShopPSGS\\SmartShop.ApiGateway\\SmartShop.ApiGateway\\SmartShop.ApiGateway.csproj",
+  "projectFilePath": "C:\\Users\\Nikola\\Desktop\\Web2\\DeliveryShopFrontend\\DeliveryShop\\SmartShop.ApiGateway\\SmartShop.ApiGateway.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nikola\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\2.0.0\\microsoft.aspnetcore.hosting.abstractions.2.0.0.nupkg.sha512",

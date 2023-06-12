@@ -1168,11 +1168,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nikola\\Desktop\\Web2\\smartShopPSGS\\Auth\\Auth.Model\\Auth.Model.csproj",
+      "projectUniqueName": "C:\\Users\\Nikola\\Desktop\\Web2\\DeliveryShopFrontend\\Auth\\Auth.Model\\Auth.Model.csproj",
       "projectName": "Auth.Model",
-      "projectPath": "C:\\Users\\Nikola\\Desktop\\Web2\\smartShopPSGS\\Auth\\Auth.Model\\Auth.Model.csproj",
+      "projectPath": "C:\\Users\\Nikola\\Desktop\\Web2\\DeliveryShopFrontend\\Auth\\Auth.Model\\Auth.Model.csproj",
       "packagesPath": "C:\\Users\\Nikola\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nikola\\Desktop\\Web2\\smartShopPSGS\\Auth\\Auth.Model\\obj\\",
+      "outputPath": "C:\\Users\\Nikola\\Desktop\\Web2\\DeliveryShopFrontend\\Auth\\Auth.Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

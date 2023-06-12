@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xH5mpJuM01ubeAd1yMM0KhMUP36BCfoyH7pcc97cRURA7jfT79NP+JeUaFTFtV0FpZ7cBllvVqZ7dEwWCBLuWw==",
+  "dgSpecHash": "8zcM3Zw1Uvuh7VlOSGvSJOfxHUiFZKuZBES+V83t8IDpjywC65ZGAcDRwint0SZe1fhbi9oJnmDPN2RhWN7hIg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nikola\\Desktop\\Web2\\smartShopPSGS\\Auth\\Auth.Tests\\Auth.Tests.csproj",
+  "projectFilePath": "C:\\Users\\Nikola\\Desktop\\Web2\\DeliveryShopFrontend\\Auth\\Auth.Tests\\Auth.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nikola\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\Nikola\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",
