@@ -81,11 +81,11 @@ function CustomerDashboard() {
                   <div className="product-details">
                     <h2>{product.name}</h2>
                     <div className="product-details">
-                      <p>Cena: {product.price}</p>
-                      <p>Opis: {product.description}</p>
+                      <p>Price: {product.price}</p>
+                      <p>Description: {product.description}</p>
                       <div className="product-quantity mx-auto">
                         <span className="product-quantity-label">
-                          Količina:
+                          Quantity:
                         </span>
                         <input
                           className="product-quantity-field"

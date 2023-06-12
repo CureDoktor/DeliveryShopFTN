@@ -21,25 +21,25 @@ function SellerSideBar() {
         <div className="tab">
           <Link to="/seller-dashboard/profile" className="tab-link">
             <ArrowForwardDownPerson20Filled className="tab-icon" />
-            <span className="tab-text">Profil</span>
+            <span className="tab-text">Profile</span>
           </Link>
         </div>
         <div className="tab">
           <Link to="/seller-dashboard/products" className="tab-link">
             <WindowNew16Filled className="tab-icon tab-icon-window" />
-            <span className="tab-text">Dodavanje artikla</span>
+            <span className="tab-text">Add item</span>
           </Link>
         </div>
         <div className="tab">
           <Link to="/seller-dashboard/new-orders" className="tab-link">
             <ShoppingBag16Filled className="tab-icon" />
-            <span className="tab-text">Nove porudžbine</span>
+            <span className="tab-text">New Order</span>
           </Link>
         </div>
         <div className="tab">
           <Link to="/seller-dashboard/orders" className="tab-link">
             <BuildingShop16Filled className="tab-icon" />
-            <span className="tab-text">Moje porudžbine</span>
+            <span className="tab-text">My orders</span>
           </Link>
         </div>
       </div>

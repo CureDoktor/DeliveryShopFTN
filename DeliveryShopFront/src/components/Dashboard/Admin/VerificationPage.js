@@ -119,13 +119,13 @@ function VerificationPage() {
                     onClick={() => handleConfirm("accept", user)}
                     className="accept-button"
                   >
-                    Prihvati
+                    Accept
                   </Button>
                   <Button
                     onClick={() => handleConfirm("decline", user)}
                     className="reject-button"
                   >
-                    Odbij{" "}
+                    Decline{" "}
                   </Button>
                 </div>
               </DocumentCard>
@@ -151,7 +151,7 @@ function VerificationPage() {
               dialogAction === "accept" ? "accept-button" : "reject-button"
             }
           >
-            {dialogAction === "accept" ? "Prihvati" : "Odbij"}{" "}
+            {dialogAction === "accept" ? "Accept" : "Decline"}{" "}
           </Button>
           <Button text="" onClick={() => setIsDialogVisible(false)}>
             {" "}

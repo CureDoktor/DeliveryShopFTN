@@ -10,7 +10,7 @@ const SellerDashboard = () => {
     <div className="container">
       <TopBar />
       <SellerSideBar />
-      
+
       {/* Add seller-specific content */}
     </div>
   );

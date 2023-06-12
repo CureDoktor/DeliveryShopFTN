@@ -207,7 +207,7 @@ function RegisterForm() {
 
   return (
     <Form>
-      <h2 className=" pt-5 text-center pb-4">Registracija</h2>
+      <h2 className=" pt-5 text-center pb-4">Register</h2>
       <div>
         <div hidden={showPass}>
           <Row>
@@ -228,7 +228,7 @@ function RegisterForm() {
             </Col>
             <Col>
               <Form.Group controlId="firstName">
-                <Form.Label>Ime</Form.Label>
+                <Form.Label>Name</Form.Label>
                 <Form.Control
                   type="text"
                   value={firstName}
@@ -245,7 +245,7 @@ function RegisterForm() {
           <Row>
             <Col>
               <Form.Group controlId="lastName">
-                <Form.Label>Prezime</Form.Label>
+                <Form.Label>Lastname</Form.Label>
                 <Form.Control
                   type="text"
                   value={lastName}
@@ -260,7 +260,7 @@ function RegisterForm() {
             </Col>
             <Col>
               <Form.Group controlId="userName">
-                <Form.Label>Korisničko ime</Form.Label>
+                <Form.Label>Username</Form.Label>
                 <Form.Control
                   type="text"
                   value={userName}
@@ -281,7 +281,7 @@ function RegisterForm() {
           <Row>
             <Col>
               <Form.Group controlId="password">
-                <Form.Label>Lozinka</Form.Label>
+                <Form.Label>Password</Form.Label>
                 <Form.Control
                   type="password"
                   value={password}
@@ -296,7 +296,7 @@ function RegisterForm() {
             </Col>
             <Col>
               <Form.Group controlId="confirmPassword">
-                <Form.Label>Potvrda lozinke</Form.Label>
+                <Form.Label>Confirm Password</Form.Label>
                 <Form.Control
                   type="password"
                   value={confirmPassword}
@@ -313,7 +313,7 @@ function RegisterForm() {
           </Row>
         </div>
         <Form.Group controlId="date">
-          <Form.Label>Datum</Form.Label>
+          <Form.Label>Date</Form.Label>
           <Form.Control
             type="date"
             value={date}
@@ -326,21 +326,21 @@ function RegisterForm() {
           </Form.Control.Feedback>
         </Form.Group>
         <Form.Group controlId="role">
-          <Form.Label>Uloga</Form.Label>
+          <Form.Label>Role</Form.Label>
           <Form.Control
             as="select"
             value={role}
             onChange={(event) => setRole(event.target.value)}
             required
           >
-            <option value="0">Kupac</option>
-            <option value="1">Prodavac</option>
+            <option value="0">Customer</option>
+            <option value="1">Seller</option>
           </Form.Control>
         </Form.Group>
       </div>
       <div>
         <Form.Group controlId="address">
-          <Form.Label>Adresa</Form.Label>
+          <Form.Label>Address</Form.Label>
           <Form.Control
             type="text"
             value={address}
@@ -362,7 +362,7 @@ function RegisterForm() {
           <div className="upload-icon">
             <ArrowUpload16Filled />
           </div>
-          <span>Odaberi sliku</span>
+          <span>Choose image</span>
         </div>
         <input
           id="profileImageInput"
@@ -373,7 +373,7 @@ function RegisterForm() {
       </label>
       <div className="submit-button">
         <Button onClick={handleSubmit} style={{ width: "100%" }}>
-          Registruj se
+          handleRegister
         </Button>
       </div>
       <div id="signInDiv" className="w-100"></div>

@@ -64,7 +64,7 @@ function RegisterForm() {
 
       {/* Ostala polja forme */}
 
-      <button type="submit">Registruj se</button>
+      <button type="submit">Register</button>
     </form>
   );
 }

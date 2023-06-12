@@ -83,7 +83,7 @@ function SellersProducts() {
               className="add-product-button primary-button"
             >
               {" "}
-              Dodaj novi proizvod
+              Add item
             </Button>
           </div>
 
@@ -102,9 +102,9 @@ function SellersProducts() {
                   <div className="product-details">
                     <h3>{product.name}</h3>
                     <div className="document-card-div">
-                      <p>Cena: {product.price}</p>
-                      <p>Količina u magacinu: {product.quantity}</p>
-                      <p>Opis: {product.description}</p>
+                      <p>Price: {product.price}</p>
+                      <p>Quantity: {product.quantity}</p>
+                      <p>Description: {product.description}</p>
                     </div>
                   </div>
                 </div>
@@ -133,7 +133,7 @@ function SellersProducts() {
         isBlocking={false}
       >
         <div className="modal-content">
-          <h3 className="modal-text">Proizvod uspešno obrisan!</h3>
+          <h3 className="modal-text">Item deleted!</h3>
         </div>
       </Modal>
     </div>

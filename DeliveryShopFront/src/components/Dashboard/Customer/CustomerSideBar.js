@@ -10,30 +10,30 @@ function CustomerSideBar() {
   const { removeToken } = useContext(AuthContext); // Destructure removeToken from AuthContext
 
   return (
-    <div className=" col-md-4 navlink">
+    <div className="navlink">
       <div>
         <div className="tab">
           <Link to="/customer-dashboard" className="tab-link">
             <House className="tab-icon" />
-            <span className="tab-text">Početna</span>
+            <span className="tab-text">Home</span>
           </Link>
         </div>
         <div className="tab">
           <Link to="/customer-dashboard/profile" className="tab-link">
             <Person className="tab-icon" />
-            <span className="tab-text">Profil</span>
+            <span className="tab-text">Profile</span>
           </Link>
         </div>
         <div className="tab">
           <Link to="/customer-dashboard/new-order" className="tab-link">
             <Cart className="tab-icon tab-icon-window" />
-            <span className="tab-text">Nova porudžbinа</span>
+            <span className="tab-text">New Order</span>
           </Link>
         </div>
         <div className="tab">
           <Link to="/customer-dashboard/my-orders" className="tab-link">
             <Bag className="tab-icon" />
-            <span className="tab-text">Моје porudžbine</span>
+            <span className="tab-text">My Orders</span>
           </Link>
         </div>
       </div>

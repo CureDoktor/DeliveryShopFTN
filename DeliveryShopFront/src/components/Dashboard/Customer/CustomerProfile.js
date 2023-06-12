@@ -110,14 +110,12 @@ function CustomerProfile() {
             {userProfile ? (
               <div className="">
                 <div>
-                  <h3 className="card-title py-4 text-center">
-                    Korisnički profil
-                  </h3>
+                  <h3 className="card-title py-4 text-center">User Profile</h3>
                   <div
                     onClick={handleEditClick}
                     className="ms-3 mx-auto d-block cursor-pointer"
                   >
-                    <span className="pe-2">Izmeni profil </span>
+                    <span className="pe-2">Edit profile </span>
                     <Pen className={` ${isEditMode ? "active" : ""}`} />
                   </div>
                 </div>
@@ -125,7 +123,7 @@ function CustomerProfile() {
                   {isEditMode ? (
                     <Form className="stack" style={{ gap: "10px" }}>
                       <div>
-                        <Form.Label className="gray-text">Ime:</Form.Label>
+                        <Form.Label className="gray-text">Name:</Form.Label>
                         <Form.Control
                           type="text"
                           defaultValue={firstName}
@@ -133,7 +131,7 @@ function CustomerProfile() {
                         />
                       </div>
                       <div>
-                        <Form.Label className="gray-text">Prezime:</Form.Label>
+                        <Form.Label className="gray-text">Lastname:</Form.Label>
                         <Form.Control
                           type="text"
                           defaultValue={lastName}
@@ -141,9 +139,7 @@ function CustomerProfile() {
                         />
                       </div>
                       <div>
-                        <Form.Label className="gray-text">
-                          Korisničko ime:
-                        </Form.Label>
+                        <Form.Label className="gray-text">Username:</Form.Label>
                         <Form.Control
                           type="text"
                           defaultValue={userName}
@@ -159,9 +155,7 @@ function CustomerProfile() {
                         />
                       </div>
                       <div>
-                        <Form.Label className="gray-text">
-                          Datum rođenja:
-                        </Form.Label>
+                        <Form.Label className="gray-text">DOB:</Form.Label>
                         <Form.Control
                           type="date"
                           className="date-input"
@@ -170,7 +164,7 @@ function CustomerProfile() {
                         />
                       </div>
                       <div>
-                        <Form.Label className="gray-text">Adresa:</Form.Label>
+                        <Form.Label className="gray-text">Address:</Form.Label>
                         <Form.Control
                           type="text"
                           defaultValue={address}
@@ -191,24 +185,22 @@ function CustomerProfile() {
                   ) : (
                     <div className="stack" tokens={{ childrenGap: 20 }}>
                       <div className="gray-text py-2">
-                        Ime: <span className="font-bold">{firstName}</span>
+                        Name: <span className="font-bold">{firstName}</span>
                       </div>
-                      <div className="gray-text py-2">Prezime: {lastName}</div>
+                      <div className="gray-text py-2">Lastname: {lastName}</div>
                       <div className="gray-text py-2">
                         Korisničko ime: {userName}
                       </div>
                       <div className="gray-text py-2">Email: {email}</div>
-                      <div className="gray-text py-2">
-                        Datum rođenja: {date}
-                      </div>
-                      <div className="gray-text py-2">Adresa: {address}</div>
+                      <div className="gray-text py-2">DOB: {date}</div>
+                      <div className="gray-text py-2">Address: {address}</div>
                       <div className="gray-text py-2">
                         <div className="gray-text">
                           {role === 2
-                            ? "Role : admin"
+                            ? "Role : Admin"
                             : role === 1
-                            ? "Role : prodavac"
-                            : "Role : kupac"}
+                            ? "Role : Seller"
+                            : "Role : Customer"}
                         </div>
                       </div>
                     </div>
@@ -221,13 +213,13 @@ function CustomerProfile() {
                       onClick={handleSubmit}
                       styles={{ root: { marginBottom: "20px" } }} // Apply margin-bottom directly to the button
                     >
-                      Sačuvaj
+                      Save
                     </Button>
                   </div>
                 )}
               </div>
             ) : (
-              <div className="loading-text">Učitavanje...</div>
+              <div className="loading-text">Loading...</div>
             )}
           </div>
         </Col>

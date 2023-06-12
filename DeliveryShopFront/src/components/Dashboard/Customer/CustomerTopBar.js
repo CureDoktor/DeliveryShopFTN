@@ -25,8 +25,8 @@ function CustomerTopBar() {
       >
         <div className="logout-tab">
           <div className="tab" onClick={handleLogout}>
-            <DoorOpen className="tab-icon" title="Odjava" ariaLabel="Odjava" />
-            <span className="tab-text">Odjavi se</span>
+            <DoorOpen className="tab-icon" title="Logout" ariaLabel="Logout" />
+            <span className="tab-text">Logout</span>
           </div>
         </div>
       </div>

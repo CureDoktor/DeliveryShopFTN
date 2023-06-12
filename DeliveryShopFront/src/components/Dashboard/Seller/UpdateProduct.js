@@ -146,7 +146,7 @@ function UpdateProduct() {
               required
             />
           </Form.Group>
-          <div className="upload-image">
+          <div className="">
             <Form.Group>
               <Form.Label>Choose Image</Form.Label>
               <div className="upload-label">

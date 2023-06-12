@@ -9,24 +9,24 @@ function AdminSideBar() {
   const { removeToken } = useContext(AuthContext); // Destructure removeToken from AuthContext
 
   return (
-    <div className=" col-md-4 navlink">
+    <div className=" navlink">
       <div>
         <div className="tab">
           <Link to="/admin-dashboard/profile" className="tab-link">
             <Person className="tab-icon" />
-            <span className="tab-text">Profil</span>
+            <span className="tab-text">Profile</span>
           </Link>
         </div>
         <div className="tab">
           <Link to="/admin-dashboard/verifications" className="tab-link">
             <CheckCircle className="tab-icon" />
-            <span className="tab-text">Verifikacije</span>
+            <span className="tab-text">Verification</span>
           </Link>
         </div>
         <div className="tab">
           <Link to="/admin-dashboard/orders" className="tab-link">
             <BagCheck className="tab-icon" />
-            <span className="tab-text">Sve porudžbine</span>
+            <span className="tab-text">All orders</span>
           </Link>
         </div>
       </div>

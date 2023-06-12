@@ -26,11 +26,10 @@ function SellerTopBar() {
   return (
     <div className="top-bar">
       <div horizontal tokens={{ childrenGap: 10 }} className="stack tab-group">
-       
         <div className="logout-tab">
           <div className="tab" onClick={handleLogout}>
             <SignOut20Filled className="tab-icon" title="Odjava" />
-            <span className="tab-text">Odjavi se</span>
+            <span className="tab-text">Logout</span>
           </div>
         </div>
       </div>

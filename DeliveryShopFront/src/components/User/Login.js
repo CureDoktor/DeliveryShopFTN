@@ -99,10 +99,10 @@ function Login() {
   return (
     <div className="login-container">
       <div style={{ width: "400px" }}>
-        <h2 className="pb-5 text-center">Prijava</h2>
+        <h2 className="pb-5 text-center">Login</h2>
         <Form>
           <Form.Group controlId="username">
-            <Form.Label>Korisničko ime</Form.Label>
+            <Form.Label>Username</Form.Label>
             <Form.Control
               type="text"
               value={username}
@@ -111,7 +111,7 @@ function Login() {
             />
           </Form.Group>
           <Form.Group className="py-5" controlId="password">
-            <Form.Label>Lozinka</Form.Label>
+            <Form.Label>Password</Form.Label>
             <Form.Control
               type="password"
               value={password}
@@ -130,9 +130,7 @@ function Login() {
           <div id="signInDiv"></div>
         </div>
         <div className="stack text-center py-3">
-          <Link onClick={handleRegister}>
-            Niste registrovani? Registrujte se
-          </Link>
+          <Link onClick={handleRegister}>No account? Register Now</Link>
         </div>
       </div>
     </div>

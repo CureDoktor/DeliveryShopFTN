@@ -35,7 +35,6 @@ function SellersOrdersPage() {
           setOrders(data);
         }
       } catch (error) {
-        console.log("NESTONERADI");
         console.error("Error:", error);
       }
     };

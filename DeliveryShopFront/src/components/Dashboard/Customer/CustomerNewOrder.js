@@ -65,7 +65,7 @@ function CustomerNewOrder() {
       const response = await postOrders(token, orderData);
 
       if (response.ok) {
-        setMessage("Uspešno ste dodali porudžbinu!");
+        setMessage("Your purchase is saved!");
         setIsModalOpen(true); // Show success modal
         setTimeout(() => {
           setIsModalOpen(false); // Hide the modal after 3 seconds
@@ -75,7 +75,7 @@ function CustomerNewOrder() {
           navigate("/customer-dashboard");
         }, 3000);
       } else {
-        setMessage("Nema dovoljno jedinica artikla koje želite da naručite!");
+        setMessage("There is no enough quantity!");
         setIsModalOpen(true);
         // Show success modal
         setTimeout(() => {
@@ -105,11 +105,6 @@ function CustomerNewOrder() {
       updatedCartItems[itemId].quantity -= 1;
       setCartItems(updatedCartItems);
     }
-  };
-
-  const handlePlatiPouzecem = () => {
-    console.log("Plati Pouzecem clicked");
-    // Add your logic for "Plati Pouzecem" button here
   };
 
   return (
@@ -151,7 +146,7 @@ function CustomerNewOrder() {
                 </div>
               ))}
               <Form.Group controlId="address">
-                <Form.Label className="pt-2">Adresa: </Form.Label>
+                <Form.Label className="pt-2">Address: </Form.Label>
                 <Form.Control
                   type="text"
                   value={address}
@@ -165,24 +160,24 @@ function CustomerNewOrder() {
                 />
                 {addressError && (
                   <Form.Control.Feedback type="invalid">
-                    Adresa je obavezna!
+                    Type address in!
                   </Form.Control.Feedback>
                 )}
               </Form.Group>
-              <p className="pt-3">Komentar:</p>
+              <p className="pt-3">Comment:</p>
               <textarea
                 rows={3}
                 value={comment}
                 onChange={(event) => setComment(event.target.value)}
                 className="checkout-comment"
               ></textarea>
-              <p className="total-amount">Vaš račun je: {total} dinara</p>
+              <p className="total-amount">Your bill is: {total} dolars</p>
               <div className="checkout-buttons">
                 <Button
                   onClick={handleCheckout}
                   className="checkout-button w-100"
                 >
-                  Poruci sa pouzecem
+                  Order with delivery
                 </Button>
                 <PayPalScriptProvider
                   options={{
@@ -212,9 +207,7 @@ function CustomerNewOrder() {
                           handleCheckout();
                         })
                         .catch((error) => {
-                          setMessage(
-                            "Nemate dovoljno sredstava da izvršite kupovinu!"
-                          );
+                          setMessage("Not enough cash to do the purchase!");
                           setIsModalOpen(true);
                         });
                     }}
@@ -226,7 +219,7 @@ function CustomerNewOrder() {
               </div>
             </div>
           ) : (
-            <p className="empty-cart-message">Vaša korpa je prazna.</p>
+            <p className="empty-cart-message">Your cart is empty!</p>
           )}
         </Col>
       </Row>

@@ -115,7 +115,7 @@ function Profile() {
                   onClick={handleEditClick}
                   className="ms-3 mx-auto d-block cursor-pointer"
                 >
-                  <span className="pe-2">Izmeni profil </span>
+                  <span className="pe-2">Edit profile </span>
                   <Pen className={` ${isEditMode ? "active" : ""}`} />
                 </div>
               </div>
@@ -123,7 +123,7 @@ function Profile() {
                 {isEditMode ? (
                   <Form className="stack" style={{ gap: "10px" }}>
                     <div>
-                      <Form.Label className="gray-text">Ime:</Form.Label>
+                      <Form.Label className="gray-text">Name:</Form.Label>
                       <Form.Control
                         type="text"
                         defaultValue={firstName}
@@ -131,7 +131,7 @@ function Profile() {
                       />
                     </div>
                     <div>
-                      <Form.Label className="gray-text">Prezime:</Form.Label>
+                      <Form.Label className="gray-text">Lastname:</Form.Label>
                       <Form.Control
                         type="text"
                         defaultValue={lastName}
@@ -139,9 +139,7 @@ function Profile() {
                       />
                     </div>
                     <div>
-                      <Form.Label className="gray-text">
-                        Korisničko ime:
-                      </Form.Label>
+                      <Form.Label className="gray-text">Username:</Form.Label>
                       <Form.Control
                         type="text"
                         defaultValue={userName}
@@ -157,9 +155,7 @@ function Profile() {
                       />
                     </div>
                     <div>
-                      <Form.Label className="gray-text">
-                        Datum rođenja:
-                      </Form.Label>
+                      <Form.Label className="gray-text">DOB:</Form.Label>
                       <Form.Control
                         type="date"
                         className="date-input"
@@ -168,7 +164,7 @@ function Profile() {
                       />
                     </div>
                     <div>
-                      <Form.Label className="gray-text">Adresa:</Form.Label>
+                      <Form.Label className="gray-text">Address:</Form.Label>
                       <Form.Control
                         type="text"
                         defaultValue={address}
@@ -191,20 +187,20 @@ function Profile() {
                     <div className="gray-text py-2">
                       Ime: <span className="font-bold">{firstName}</span>
                     </div>
-                    <div className="gray-text py-2">Prezime: {lastName}</div>
+                    <div className="gray-text py-2">Lastname: {lastName}</div>
                     <div className="gray-text py-2">
                       Korisničko ime: {userName}
                     </div>
                     <div className="gray-text py-2">Email: {email}</div>
-                    <div className="gray-text py-2">Datum rođenja: {date}</div>
-                    <div className="gray-text py-2">Adresa: {address}</div>
+                    <div className="gray-text py-2">DOB: {date}</div>
+                    <div className="gray-text py-2">Address: {address}</div>
                     <div className="gray-text py-2">
                       <div className="gray-text">
                         {role === 2
-                          ? "Role : admin"
+                          ? "Role : Admin"
                           : role === 1
-                          ? "Role : prodavac"
-                          : "Role : kupac"}
+                          ? "Role : Seller"
+                          : "Role : Customer"}
                       </div>
                     </div>
                   </div>
@@ -217,7 +213,7 @@ function Profile() {
                     onClick={handleSubmit}
                     styles={{ root: { marginBottom: "20px" } }} // Apply margin-bottom directly to the button
                   >
-                    Sačuvaj
+                    Save
                   </Button>
                 </div>
               )}
@@ -225,7 +221,7 @@ function Profile() {
           </Col>
         </Row>
       ) : (
-        <span className="loading-text">Učitavanje...</span>
+        <span className="loading-text">Loading...</span>
       )}
 
       <Dialog
