@@ -143,9 +143,9 @@ function NewProduct() {
                   required
                 />
               </Form.Group>
-              <div className="upload-image">
+              <div className="">
                 <label htmlFor="productImageInput">
-                  <div className="upload-label">
+                  <div className="">
                     <PlusSquare />
                     <span>{imgSrc ? imgSrc.name : "Choose Image"}</span>
                   </div>
@@ -182,7 +182,11 @@ function NewProduct() {
               </Form.Group>
             </div>
             <div className="submit-button">
-              <Button onClick={handleSubmit} styles={{ width: "100%" }}>
+              <Button
+                className="primary-button"
+                onClick={handleSubmit}
+                styles={{ width: "100%" }}
+              >
                 Create Product
               </Button>
               {error && <div className="error-message">{error}</div>}
